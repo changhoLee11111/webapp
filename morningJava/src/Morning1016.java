@@ -4,7 +4,7 @@ public class Morning1016 {
 
         int[][] regAry = new int[5][5];
         int cnt = 1;
-
+    
         for(int i=0; i<5; i++) {
             for(int j=0; j<5; j++) {
                 regAry[i][j] = cnt++;
