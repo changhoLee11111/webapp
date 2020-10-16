@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>회원 가입</title>
+    <style>
+        div {
+            width: 180px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+    <h1 align="center">회원 가입</h1>
+    </p>
+    <div align="legt"></div><br>
+    <FORM method="post" enctype="text/plain">
+        <table width="50%" height="80" border="1" align="center" cellpadding="5" cellspacing="0" bordercolor="#9999FF">
+            <tr align="center">
+                <td colspan="2" align="cener" bgcolor="skyblue">
+                    <div style="font-weight: bold; font-size: 18px">회원 기본 정보
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="pink" align="center">
+                    <div style="font-weight: bold;">아이디
+                    </div>
+                </td>
+                <td>&nbsp<input type="text" name="my_id" size="12" maxlength="12">
+                    &nbsp4~12자의 영문 대소문자와 숫자로만 입력</td>
+            </tr>
+            <tr>
+                <td bgcolor="pink" align="center">
+                    <div style="font-weight: bold;">
+                        비밀번호</div>
+                </td>
+                <td>&nbsp<input type="password" name="my_pwd" size="12" maxlength="12">
+                    &nbsp4~12자의 영문 대소문자와 숫자로만 입력</td>
+            </tr>
+            <tr>
+                <td bgcolor="pink" align="center">
+                    <div style="font-weight: bold;"> 비밀번호 확인</div>
+                </td>
+                <td>&nbsp<input type="password" name="my_pwd2" size="12" maxlength="12"></td>
+            </tr>
+            <tr>
+                <td bgcolor="pink" align="center">
+                    <div style="font-weight: bold;">
+                        메일주소</div>
+                </td>
+                <td>&nbsp<input type="text" name="my_mail" size="30" maxlength="30">
+                    &nbsp예)id@domain.com</td>
+            </tr>
+            <tr>
+                <td bgcolor="pink" align="center">
+                    <div style="font-weight: bold;">
+                        이름</div>
+                </td>
+                <td>&nbsp<input type="text" name="my_name" size="10" maxlength="10"></td>
+            </tr>
+            <tr align="center">
+                <td colspan="2" bgcolor="skyblue">
+                    <div style="font-weight: bold; font-size: 18px">
+                        개인 신상 정보
+                    </div>
+                </td>
+
+            </tr>
+            <tr>
+                <td bgcolor="pink" align="center">
+                    <div style="font-weight: bold;">
+                        주민등록번호</div>
+                </td>
+                <td>&nbsp<input type="text" name="my_num1" size="6" maxlength="6">
+                    &nbsp -&nbsp <input type="password" name="my_num2" size="7" maxlength="7">
+                    &nbsp예)123456-1234567</td>
+            </tr>
+            <tr>
+                <td bgcolor="pink" align="center">
+                    <div style="font-weight: bold;">
+                        생일</div>
+                </td>
+                <td>&nbsp<input type="date" name="my_birth" size="4" maxlength="4">
+                    &nbsp
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="pink" align="center">
+                    <div style="font-weight: bold;">
+                        성별</div>
+                </td>
+                <td>&nbsp남자<input type="radio" name="gender">
+                    &nbsp여자<input type="radio" name="gender">
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="pink" align="center">
+                    <div style="font-weight: bold;">관심분야</div>
+                </td>
+                <td>
+                    <FORM name=chkForm action="" method=post>
+                        <input type="checkbox" name="chk" value="COMPUTER" onclick="check_only(this)">컴퓨터
+                        <input type="checkbox" name="chk" value="INTERNET" onclick="check_only(this)">인터넷
+                        <input type="checkbox" name="chk" value="TRABLE" onclick="check_only(this)">여행
+                        <input type="checkbox" name="chk" value="MOVIE" onclick="check_only(this)">영화감상
+                        <input type="checkbox" name="chk" value="MUSIC" onclick="check_only(this)">음악감상</FORM>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="pink" align="center">
+                    <div style="font-weight: bold;">자기소개</div>
+                </td>
+                <td><textarea name="my_intro" cols="70" rows="5"></textarea></td>
+            </tr>
+
+        </table>
+        <p align="center">
+            <input type="submit" value="회원 가입">
+            <input type="reset" value="다시 입력">
+    </FORM>
+    </p>
+</body>
+
+</html>

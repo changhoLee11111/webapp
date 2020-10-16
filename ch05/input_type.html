@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch05/input_type.html</title>
+</head>
+
+<body>
+    <form>
+        <h3>오늘 날짜 입력</h3>
+        Today: <input type="date" name="today">
+        <h3>프로젝트 수행 기간</h3>
+        From: <input type="date" name="from" min="2020-10-10" max="2020-11-10">
+        To: <input type="date" name="to" min="2020-11-10" max="2020-12-10">
+        <h3>현재 시간</h3>
+        Time: <input type="time" name="now">
+        <h3>생년월일</h3>
+        Birth: <input type="datetime-local" name="birth"
+        <h3>원하는 색상 입력</h3>
+        <input type="color" nale="color_value" value="blue">
+        <h3>학습량</h3>
+        홍민성:<meter min='0' max='100' optimum="50" value="60">60 / 100</meter><br>
+        송지효:<meter low="0.3" high="0.5" value="0.22">22%</meter><br>
+        이민정:<meter low="0.25" high="0.75" optimum="0.8" value="0.2">20%</meter>
+        <p />
+        <h3>작업 진행률</h3>
+        초기작업:<progress value="22" max="100" title="진행율">22%</progress><br>
+        중간작업:<progress value="0.77" max="1.0">77%</progress><br>
+        다음작업:<progress value="0.98" max="1">98%</progress><br>
+    </form>
+</body>
+
+</html>
