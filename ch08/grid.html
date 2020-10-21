@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid.html</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 100px auto 100px;
+            grid-template-rows: 100px 80px 200px 60px;
+        }
+
+        .grid-container>div {
+            background: skyblue;
+            margin: 5px;
+        }
+
+        .grid-item1 {
+            grid-column: 1 / 4;
+        }
+
+        .grid-item2 {
+            grid-column: 1 / 4;
+        }
+
+        .grid-item3 {
+            padding: 1px 0;
+        }
+
+        ul {
+            padding: 1px;
+        }
+
+        .grid-item6 {
+            grid-column: 1 / 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item1">1</div>
+        <div class="grid-item2">2</div>
+        <div class="grid-item3">
+            <ul style="list-style-type: none;">
+                <li>menu1</li>
+                <li>menu2</li>
+                <li>menu3</li>
+            </ul>
+        </div>
+        <div class="grid-item4">
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, delectus totam aliquid accusantium
+                voluptatibus laborum odio et minus soluta eaque officiis earum amet ut eos nisi consectetur cum, eius
+                velit.</h3>
+        </div>
+        <div class="grid-item5"><img style="width: 90px; height: 190px;" src="../images/aside.png"></div>
+        <div class="grid-item6">since 1980.</div>
+    </div>
+
+</body>
+
+</html>
