@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position.html</title>
+    <style>
+        * {
+            font-size: 15px;
+        }
+
+        header {
+            position: static;
+            width: 100%;
+            height: 50px;
+            display: block;
+        }
+
+        nav {
+            display: inline-block;
+            position: static;
+            width: 90px;
+            height: 300px;
+            background-color: burlywood;
+        }
+
+        section {
+            display: inline-block;
+            position: absolute;
+            left: 98px;
+            top: 65px;
+            width: 77.6%;
+            height: 300px;
+            background-image: url("../daum.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        footer {
+            font-size: 30px;
+            text-align: center;
+            position: static;
+            height: 50px;
+            background-color: chocolate;
+        }
+
+        li {
+            display: inline;
+        }
+
+        nav>ul {
+            position: sticky;
+            top: 0px;
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <ul>
+                <li><a href="">1.menu</a></li>
+                <li><a href="">2.menu</a></li>
+                <li><a href="">3.menu</a></li>
+            </ul>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Intro</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Article</a></li>
+                <li><a href="">Aside</a></li>
+            </ul>
+        </nav>
+        <section>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates a eius est? Fugiat eius soluta iusto
+            fuga accusantium voluptate. Dicta, repellat hic? Libero culpa sunt, corrupti itaque sit quia labore?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere perspiciatis atque nobis veritatis iusto
+            nesciunt, corporis laboriosam distinctio voluptatibus consequuntur hic delectus cumque ad omnis modi ipsa
+            nulla tempora minima.
+            aliquam fugit nam rem alias at ut magnam natus tempore, officia itaque fugiat, amet deserunt pariatur!
+        </section>
+        <footer>from 1980</footer>
+    </div>
+</body>
+
+</html>
